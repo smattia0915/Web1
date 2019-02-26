@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Graphic Design</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/home_page.css" />
+</head>
+<body id="grad5">
+<header class="logo">
+</header>
+
+<div class="menu-wrap">
+    <nav class="menu">
+        <ul class="clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="click.html">Common Pieces</a></li>
+            <li><a href="comp.html">Good Composition</a></li>
+            <li>
+                <a href="#">Tutorials <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="tut.html">Photoshop</a></li>
+                    <li><a href="ill.html">Illustrator</a></li>
+                    <li><a href="other.html">Other</a></li>
+                </ul>
+            </li>
+            <li><a href="chooser.html">Color</a></li>
+            <li><a class="link" href = "http://serenity.ist.rit.edu/~sxm3888/140/">Personal Webpage</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+</div>
+
+     <script src="assets/media/jscolor.js"></script>
+
+	Color: <input class="jscolor" value="ab2567"> <p> Click above to manipulate the color in the box</p>
+
+	<button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}">
+		Pick text color
+	</button>
+	<p> Click the "pick text color" button to manipulate the color of all the text on this
+	page.</p>
+	<br>	
+	HEX value: <input id="chosen-value" value="000000">
+
+	<script>
+	function setTextColor(picker) {
+		document.getElementsByTagName('body')[0].style.color = '#' + picker.toString()
+	}
+	</script>
+	
+	<p>This is a form of a color chooser. It helps you pick out specific colors you could 
+	possibly want. Many people use these, some for webpages to find a specific color that
+	would work with their color scheme. Artists use it to find the correct color that'll
+	fit well in their composition.</p>
+	
+	<p ID = "script">Color is considered very important in art. This is because it can tell out a lot 
+	about a work of art. If the colors are bright it has a happier feeling to it. Whereas, 
+	if the colors are darker it’ll have more of a sad feeling to it. There are warm colors 
+	which are yellow, orange, red, and pink, these colors cause a picture to look brighter. 
+	Cool colors are blues, greens, and purples, these sometimes make you imagine a wintry 
+	world. Different colors cause the piece to have a different mood. Mood is the feeling 
+	one gets when looking at a piece of art. </p>
+	
+	<img class= "footer" src= "assets/media/fancy3.png" alt="Picture">
+</body>
+</html>
